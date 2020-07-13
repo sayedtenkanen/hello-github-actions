@@ -1,0 +1,11 @@
+name: A workflow for step 1 project file
+on: push
+jobs: 
+  build:
+    name: First devOps action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with: 
+          MY_NAME: "devOps"
