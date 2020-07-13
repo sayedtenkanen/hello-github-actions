@@ -1,0 +1,2 @@
+name: A workflow for step 1 project file
+on: push
